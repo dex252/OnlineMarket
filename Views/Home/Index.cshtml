@@ -1,0 +1,18 @@
+﻿@model OnlineMarket.ViewModels.Home.HomeViewModel
+
+@{
+    ViewBag.Title = "Home";
+    ViewBag.IsWebpack = true;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/bundles/homeBundle.css" type="text/css" />
+<link rel="stylesheet" href="~/libs/jstree/dist/themes/default/style.min.css" type="text/css" />
+
+@section scripts{
+    <script src="~/bundles/homeBundle.js"></script>
+}
+
+<div class="badge-info">
+    <div>Домашняя страница от @Model.Text</div>
+</div>
