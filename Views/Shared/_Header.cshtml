@@ -1,8 +1,17 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-    <div class="container">
-        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Обзор</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+<nav class="header navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">   
+    <div class="container header-container ml-0">
+        <button type="button" id="burger-button-catalog" class="mr-3">
+            <span class="burger-span"></span>
+        </button>
+        <div id="header-burger-menu">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
+        <button class="navbar-toggler mt-1" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
